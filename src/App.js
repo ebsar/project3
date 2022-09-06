@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React, { useState } from "react";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import Aboutus from "./Pages/Aboutus";
+import Home from "./Pages/Home";
+import { BsChevronDown } from 'react-icons/bs';
+import Resources from "./Pages/Resources";
+import Blog from "./Pages/Blog";
+import Findcarpool from "./Pages/Findcarpool";
+import Login from "./Pages/Login";
+import Signup from "./Pages/Signjup";
+import './index.css';
+import Ajeper from "./Photos/Ajeper.png";
+import Togglebutton from "./Pages/MobileMenu/Togglebutton";
+import MobileMenu from './Pages/MobileMenu/MobileMenu';
+import Backdrop from "./Pages/MobileMenu/Backdrop";
+import styled from "styled-components";
+import NavBar from "./NavBar";
+import Footer from "./Pages/Footer";
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <NavBar/>
+      <Footer />
     </div>
-  );
+  )
 }
 
 export default App;

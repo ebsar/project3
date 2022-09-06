@@ -1,0 +1,43 @@
+
+.Home-Section{
+    position: fixed;
+    display: flex;
+    z-index: 1;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px;
+  }.Icon-Section{ 
+    display: flex;
+    gap: 10%;
+  }.Icon-Section h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: x-large;
+  }.Icon-Section{
+    display: flex;
+    align-items: center;
+  }.Button-Section{
+    
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 5%;
+    flex: 3;
+  }
+  @media (max-width: 1110px ){
+    .navigation-bar, .Button-Section{
+        display: none;
+    }.Home-Section{
+      display: flex;
+      z-index: 1;
+      align-items: center;
+      justify-content: space-between;
+      margin: 5px;
+    }
+  }@media (min-width: 1111px ){
+        .toggle-container1{
+          display: none;
+        }
+  }.Home-Section__sticky{
+    background-color: blueviolet;
+  }
+  

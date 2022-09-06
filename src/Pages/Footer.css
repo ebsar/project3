@@ -1,0 +1,125 @@
+* {}
+
+@media (min-width: 1110px) {
+    body {}
+
+    .first-container {
+        position: absolute;
+        background-color: #f2f7ff;
+        display: flex;
+        height: 100%;
+        top: 0;
+        width: 100%;
+    }
+
+    .Footer {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 45%;
+    }
+
+    .images {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        top: 0;
+        height: 100%;
+        background-image: url('../Photos/background.png');
+        overflow: hidden;
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: contain;
+        transform: scale 1.2s (1.2);
+        -webkit-animation: fadeIn ease 5s;
+    }
+
+    @keyframes rotation {
+        0% {
+            transform: rotate(-360deg);
+        }
+
+    }
+
+    @keyframes zoomout {
+        0% {
+            transform: scale(1.2);
+        }
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .Text-Container span {
+        width: 100%;
+        font-family: 'Poppins', sans-serif;
+        font-size: 50px;
+        font-weight: bolder;
+        -webkit-animation: fadeIn ease 5s;
+    }
+
+    .Text-Container p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 40px;
+        font-weight: normal;
+        margin-top: 10px;
+        -webkit-animation: fadeIn ease 7s;
+    }
+
+    .Text-Container small {
+        font-family: 'Poppins', sans-serif;
+        font-size: large;
+        font-weight: lighter;
+        -webkit-animation: fadeIn ease 8s;
+    }
+
+    .Text-Container {
+        margin-top: 20%;
+
+        margin-left: 12%;
+
+    }
+
+    .buttons-section {
+        display: flex;
+        gap: 5rem;
+        margin-left: 12%;
+        margin-top: 20%;
+        -webkit-animation: fadeIn ease 5s;
+    }
+
+    .GTD-btn {
+        background-color: #514BC3;
+        width: 23%;
+        border-radius: 30px;
+        color: white;
+        font-size: 15px;
+        border: none;
+    }.app-Play-btn{
+        display: flex;
+        width: 55px;
+        height: 55px;
+    }.getin-btn{
+        display: flex;
+        gap: 130px;
+    }.Google-Play-btn{
+        display: flex;
+        width: 55px;
+        height: 55px;
+    }
+
+    .buttons-section {}
+}
+
+@media (max-width: 1110px) {
+    * {
+        display: none;
+    }
+}
