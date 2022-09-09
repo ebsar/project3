@@ -1,4 +1,3 @@
-
 @media (min-width: 1110px) {
     .first-container {
         position: absolute;
@@ -29,14 +28,14 @@
 
     }
 
-    
+
 
     .Text-Container span {
         width: 100%;
         font-family: 'Poppins', sans-serif;
         font-size: 50px;
         font-weight: bolder;
-        
+
     }
 
     .Text-Container p {
@@ -44,14 +43,14 @@
         font-size: 40px;
         font-weight: normal;
         margin-top: 10px;
-       
+
     }
 
     .Text-Container small {
         font-family: 'Poppins', sans-serif;
         font-size: large;
         font-weight: lighter;
-        
+
     }
 
     .Text-Container {
@@ -66,7 +65,7 @@
         gap: 5rem;
         margin-left: 12%;
         margin-top: 20%;
-        
+
     }
 
     .GTD-btn {
@@ -76,23 +75,101 @@
         color: white;
         font-size: 15px;
         border: none;
-    }.app-Play-btn{
+    }
+
+    .app-Play-btn {
         display: flex;
         width: 55px;
         height: 55px;
-    }.getin-btn{
+    }
+
+    .getin-btn {
         display: flex;
         gap: 130px;
-    }.Google-Play-btn{
+    }
+
+    .Google-Play-btn {
         display: flex;
         width: 55px;
         height: 55px;
     }
 
-    .buttons-section {}
-}@media (max-width: 1110px ){
-    .first-container{
-        display: none;
-    }
-  }
 
+}
+
+@media (max-width: 1110px) {
+    .first-container {
+        position: fixed;
+        background-color: #f2f7ff;
+        display: flex;
+        height: 100%;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .Footer {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        font-family: 'Poppins';
+    }
+
+    .Text-Container span {
+        width: 100%;
+        font-family: 'Poppins';
+        font-size: 35px;
+        font-weight: bolder;
+    }
+
+    .Text-Container p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        font-weight: normal;
+        margin-top: 10px;
+
+    }
+
+    .Text-Container small {
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        display: flex;
+        font-weight: lighter;
+    }
+    .Text-Container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .buttons-section {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .app-Play-btn {
+       display: flex;
+       width: 50px;
+       height: 50px;
+       margin-right: 100px;
+    }
+    .Google-Play-btn {
+        display: flex;
+       width: 50px;
+       height: 50px;
+       margin-right: 100px;
+       margin-top: 20px;
+    }.GTD-btn{
+        background-color: #514BC3;
+        width: 23%;
+        height: 50px;
+        border-radius: 30px;
+        color: white;
+        font-size: 15px;
+        border: none;
+    }
+
+}

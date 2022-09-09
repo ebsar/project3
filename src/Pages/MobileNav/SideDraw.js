@@ -14,7 +14,7 @@ function SideDraw (props){
         <div style={{ backgroundColor:'#f2f7ff'}} className="Side-Drawer" data-aos="fade-right" >
             <div className='Logo-Container'>
                 <img src={Ajeper} />
-                <Link to='/' style={{textDecoration: 'none', fontFamily:'poppins', color:'black', fontSize:'x-large', }} >Ajeper </Link>
+                <Link to='/' style={{textDecoration: 'none', fontFamily:'poppins', color:'black', fontSize:'x-large',fontWeight:'bolder' }} >Ajeper </Link>
                 <AiOutlineClose style={{width:'1.5rem', height: '1.5rem'}} onClick={props.onClose} />
             </div>
             <nav >
@@ -30,7 +30,7 @@ function SideDraw (props){
                     </div>
                 }
            </nav>
-           <div  className='Button-Section' style={{dispplay: 'flex', justifyContent:'center'}} >
+           <div  className='Button-Section2' style={{dispplay: 'flex', justifyContent:'center'}} >
             <Link style={{textDecoration: 'none', fontFamily:'poppins', color:'black', border:'1px solid black', width:'6rem', height:'2.5rem', display:'flex', alignItems:'center', justifyContent:'center', background:'white', borderRadius:'20px'}} to='/login' className='Login-btn'>Login</Link>
             <Link style={{textDecoration: 'none', fontFamily:'poppins',  width:'6rem', height:'2.5rem', display:'flex', alignItems:'center', justifyContent:'center', backgroundColor:'#514BC3' ,color:'white', borderRadius:'20px'}} to='/signup' className='Signup-btn' >Sign Up</Link>
            </div>

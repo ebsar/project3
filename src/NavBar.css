@@ -5,7 +5,8 @@
     z-index: 1;
     align-items: center;
     justify-content: space-between;
-    margin: 5px;
+    flex-wrap: wrap;
+ 
   }.Icon-Section{ 
     display: flex;
     gap: 10%;

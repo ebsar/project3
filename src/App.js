@@ -14,13 +14,14 @@ import styled from "styled-components";
 import NavBar from "./NavBar";
 import Footer from "./Pages/Footer";
 import MobileNav from "./Pages/MobileNav/MobileNav";
+
 function App() {
 
   return (
     <BrowserRouter>
     <Routes>
     <Route path="/" element={<Home />} />
-        <Route path='/resources' component={<Resources/>} />
+        <Route path='/resources' element={<Resources/>} />
         <Route path='/aboutus' element={<Aboutus />} />
         <Route path='/blog' element={<Blog />} />
         <Route path='/findcarpool' element={<Findcarpool />} />

@@ -11,7 +11,7 @@ function MobileNav (){
     setsideDraw((prev) => !prev);
   }
     return(
-        <nav className="Mobile-Nav-Container">
+        <nav className="Mobile-Nav-Container" data-aos="zoom-in">
             <div className="Img-Container"/>
             <img src={Ajeper} />
             <div className="Title-Container">

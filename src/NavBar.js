@@ -49,7 +49,7 @@ function App() {
 `;
 
   return (
-      <div style={{ width: '99%' }} className="Home-Section" data-aos="fade-down" >
+      <div style={{ width: '99%' }} className="Home-Section" data-aos="zoom-in" >
         <div className="Icon-Section">
           <img src={Ajeper} />
           <h1>AjePer</h1>
@@ -76,7 +76,7 @@ function App() {
         </div>
         <div className="Button-Section">
           <Link to="/login" style={{ textDecoration: 'none', color: 'white' }} >Log in</Link>
-          <Link to="/signup" style={{ textDecoration: 'none', width:'100px', height:'40px', background:'white',color:'black', display:'flex', alignItems:'center', borderRadius:'20px'}} >Sign up</Link>
+          <Link to="/signup" style={{ textDecoration: 'none', width:'100px', height:'40px', background:'white',color:'black', display:'flex', alignItems:'center',justifyContent:'center', borderRadius:'20px'}} >Sign up</Link>
         </div>
         <div onClick={onPress} className="toggle-container1">
           

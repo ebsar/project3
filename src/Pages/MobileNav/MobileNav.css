@@ -1,10 +1,11 @@
-body{
-}.Mobile-Nav-Container{
-    font-family: 'Poppins' sans-serif;
+.Mobile-Nav-Container{
     position: fixed;
     width: 100%;
     display: flex;
     align-items: center;
+    z-index: 1;
+    margin: 5px;
+    font-family: 'Poppins';
 }.toogle-container{
     position:absolute;
     left: 90%;
@@ -12,7 +13,11 @@ body{
     margin-left: 15px;
     font-size: x-large;
     font-weight: bolder;
-}
+}@media (min-width: 1110px ){
+    .Mobile-Nav-Container{
+      display: none;
+    }
+  }
 
 
 
