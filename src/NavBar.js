@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Aboutus from "./Pages/Aboutus";
 import Home from "./Pages/Home";
@@ -7,14 +7,16 @@ import Resources from "./Pages/Resources";
 import Blog from "./Pages/Blog";
 import Findcarpool from "./Pages/Findcarpool";
 import Login from "./Pages/Login";
-import Signup from "./Pages/Signjup";
+import Signup from "./Pages/Signup";
 import './NavBar.css';
 import Ajeper from "./Photos/Ajeper.png";
-import Togglebutton from "./Pages/MobileMenu/Togglebutton";
-import MobileMenu from './Pages/MobileMenu/MobileMenu';
-import Backdrop from "./Pages/MobileMenu/Backdrop";
 import styled from "styled-components";
+import Aos from "aos";
+import "aos/dist/aos.css";
 function App() {
+  useEffect(()=> {
+    Aos.init({duration:2000})
+  }, []);
   const [Nav, setNav] = useState(false);
   const onPress = () => {
     setNav((prev) => !prev);
@@ -47,8 +49,7 @@ function App() {
 `;
 
   return (
-    <BrowserRouter>
-      <div style={{ width: '99%' }} className="Home-Section">
+      <div style={{ width: '99%' }} className="Home-Section" data-aos="fade-down" >
         <div className="Icon-Section">
           <img src={Ajeper} />
           <h1>AjePer</h1>
@@ -78,27 +79,9 @@ function App() {
           <Link to="/signup" style={{ textDecoration: 'none', width:'100px', height:'40px', background:'white',color:'black', display:'flex', alignItems:'center', borderRadius:'20px'}} >Sign up</Link>
         </div>
         <div onClick={onPress} className="toggle-container1">
-          <Togglebutton />
-          {
-            Nav &&
-            <MobileMenu />
-          }
-          {
-            Nav &&
-            <Backdrop />
-          }
+          
         </div>
       </div>
-      <Routes>
-        <Route path='/' component={<Home/>} />
-        <Route path='/resources' component={<Resources/>} />
-        <Route path='/aboutus' element={<Aboutus />} />
-        <Route path='/blog' element={<Blog />} />
-        <Route path='/findcarpool' element={<Findcarpool />} />
-        <Route path='/login' element={<Login />} />
-        <Route path='/signup' element={<Signup />} />
-      </Routes>
-    </BrowserRouter>
   )
 }
 

@@ -1,0 +1,20 @@
+body{
+}.Mobile-Nav-Container{
+    font-family: 'Poppins' sans-serif;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}.toogle-container{
+    position:absolute;
+    left: 90%;
+}.Title-Container{
+    margin-left: 15px;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+
+
+
+

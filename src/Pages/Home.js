@@ -1,14 +1,18 @@
-import { Link } from 'react-router-dom';
-import './Home.css';
-import getinApple from "../Photos/getinApple.png";
-import Footer from './Footer';
-import NavBar from '../NavBar';
+import React, { useState } from "react";
+import '../index.css';
+import styled from "styled-components";
+import NavBar from "../NavBar";
+import Footer from "./Footer";
+import MobileNav from "./MobileNav/MobileNav";
+function App() {
 
-function Home (){
-    return (
-        <div className='Footer'>
-        
-        </div>
-    )
+  return (
+    <div>
+      <NavBar/>
+      <MobileNav/>
+      <Footer/>
+    </div>
+  )
 }
-export default Home;
+
+export default App;

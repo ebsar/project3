@@ -7,22 +7,27 @@ import Resources from "./Pages/Resources";
 import Blog from "./Pages/Blog";
 import Findcarpool from "./Pages/Findcarpool";
 import Login from "./Pages/Login";
-import Signup from "./Pages/Signjup";
+import Signup from "./Pages/Signup";
 import './index.css';
 import Ajeper from "./Photos/Ajeper.png";
-import Togglebutton from "./Pages/MobileMenu/Togglebutton";
-import MobileMenu from './Pages/MobileMenu/MobileMenu';
-import Backdrop from "./Pages/MobileMenu/Backdrop";
 import styled from "styled-components";
 import NavBar from "./NavBar";
 import Footer from "./Pages/Footer";
+import MobileNav from "./Pages/MobileNav/MobileNav";
 function App() {
 
   return (
-    <div>
-      <NavBar/>
-      <Footer />
-    </div>
+    <BrowserRouter>
+    <Routes>
+    <Route path="/" element={<Home />} />
+        <Route path='/resources' component={<Resources/>} />
+        <Route path='/aboutus' element={<Aboutus />} />
+        <Route path='/blog' element={<Blog />} />
+        <Route path='/findcarpool' element={<Findcarpool />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/signup' element={<Signup />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 

@@ -24,20 +24,12 @@
     flex: 3;
   }
   @media (max-width: 1110px ){
-    .navigation-bar, .Button-Section{
-        display: none;
-    }.Home-Section{
-      display: flex;
-      z-index: 1;
-      align-items: center;
-      justify-content: space-between;
-      margin: 5px;
+    .Home-Section{
+      display: none;
     }
-  }@media (min-width: 1111px ){
-        .toggle-container1{
-          display: none;
-        }
-  }.Home-Section__sticky{
-    background-color: blueviolet;
   }
-  
+  @media (min-width: 1110px ){
+    .buttons-section{
+      display: none;
+    }
+  }
