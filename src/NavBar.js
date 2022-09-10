@@ -62,12 +62,12 @@ function App() {
           <Link to="/blog" ><li>Blog</li></Link>
           <a >
             <li style={{display: 'flex', alignItems:'center', gap:'10px'}}>
-              Find Carpool<BsChevronDown onClick={onHold}/>
+              Find Carpool<BsChevronDown className={FindCar ? "rotated" : "rotate"} onClick={onHold}/>
               {
             FindCar && 
-            <div style={{position:'absolute', marginTop: '100px', display:'flex', flexDirection:'column', gap:'10px' }}>
-            <Link to="/rentcar"><li>Rent a Car</li></Link>
-            <Link to="/sellcar"><li>Sell Car</li></Link>
+            <div style={{ display:'flex', flexDirection:'column', position:'absolute', top:'50px', width:'190px', gap:'10px'}}>              
+            <Link to="/"><li>Rent a Car</li></Link>
+            <Link to="/"><li>Sell Car</li></Link>
             </div>
           }
             </li>

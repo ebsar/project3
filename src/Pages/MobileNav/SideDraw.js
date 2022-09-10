@@ -22,7 +22,7 @@ function SideDraw (props){
                 <Link style={{textDecoration: 'none', fontFamily:'poppins', color:'black'}} to='/resources'> Resources </Link>
                 <Link style={{textDecoration: 'none', fontFamily:'poppins', color:'black'}} to='/aboutus'> About Us </Link>
                 <Link style={{textDecoration: 'none', fontFamily:'poppins', color:'black'}} to='/blog'> Blog </Link>
-                <a style={{textDecoration: 'none', fontFamily:'poppins', color:'black', display:'flex', alignItems:'center', justifyContent:'space-between'}} > Find Carpool<BsChevronDown onClick={onData}/></a>
+                <a style={{textDecoration: 'none', fontFamily:'poppins', color:'black', display:'flex', alignItems:'center', justifyContent:'space-between'}} > Find Carpool<BsChevronDown className={data ? "rotated" : "rotate"} onClick={onData}/></a>
                 {
                     data && <div style={{display:'flex', flexDirection:'column', gap:'10px', marginLeft:'20px'}} >
                         <Link style={{textDecoration: 'none', fontFamily:'poppins', color:'black'}} to='/'>Buy Car</Link>

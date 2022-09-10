@@ -1,4 +1,6 @@
+
 @media (min-width: 1110px) {
+
     .first-container {
         position: absolute;
         background-color: #f2f7ff;
@@ -17,25 +19,24 @@
     }
 
     .images {
-        height: 100%;
-        width: 100%;
         position: absolute;
+        width: 100% !important;
         display: flex;
+        top: 0;
+        height: 100%;
         background-image: url('../Photos/background.png');
+        overflow: hidden;
         background-repeat: no-repeat;
         background-position: right;
         background-size: contain;
-
     }
-
-
 
     .Text-Container span {
         width: 100%;
         font-family: 'Poppins', sans-serif;
         font-size: 50px;
         font-weight: bolder;
-
+        
     }
 
     .Text-Container p {
@@ -43,14 +44,14 @@
         font-size: 40px;
         font-weight: normal;
         margin-top: 10px;
-
+       
     }
 
     .Text-Container small {
         font-family: 'Poppins', sans-serif;
         font-size: large;
         font-weight: lighter;
-
+        
     }
 
     .Text-Container {
@@ -65,7 +66,7 @@
         gap: 5rem;
         margin-left: 12%;
         margin-top: 20%;
-
+        
     }
 
     .GTD-btn {
@@ -75,101 +76,70 @@
         color: white;
         font-size: 15px;
         border: none;
-    }
-
-    .app-Play-btn {
+    }.app-Play-btn{
         display: flex;
         width: 55px;
         height: 55px;
-    }
-
-    .getin-btn {
+    }.getin-btn{
         display: flex;
         gap: 130px;
-    }
-
-    .Google-Play-btn {
+    }.Google-Play-btn{
         display: flex;
         width: 55px;
         height: 55px;
     }
 
-
-}
-
-@media (max-width: 1110px) {
-    .first-container {
-        position: fixed;
-        background-color: #f2f7ff;
+}@media (max-width: 1110px) {
+    .first-container{
+        position: absolute;
         display: flex;
-        height: 100%;
         top: 0;
         left: 0;
+        max-width: 100%;
+        background-color: #f2f7ff;
+        height: 100vh;
         width: 100%;
-    }
-
-    .Footer {
-        margin-top: 100px;
-        display: flex;
-        flex-direction: column;
         text-align: center;
-        width: 100%;
-        font-family: 'Poppins';
     }
-
-    .Text-Container span {
-        width: 100%;
-        font-family: 'Poppins';
-        font-size: 35px;
-        font-weight: bolder;
-    }
-
-    .Text-Container p {
-        font-family: 'Poppins', sans-serif;
-        font-size: 20px;
-        font-weight: normal;
-        margin-top: 10px;
-
-    }
-
-    .Text-Container small {
-        font-family: 'Poppins', sans-serif;
-        font-size: 20px;
+    .app-Play-btn{
         display: flex;
-        font-weight: lighter;
-    }
-    .Text-Container {
-        width: 100%;
+        width: 55px;
+        height: 55px;
+        margin-right: 110px;
+    }.Google-Play-btn{
+        margin-top: 20px;
         display: flex;
-        flex-direction: column;
-    }
-    .buttons-section {
-        margin-top: 50px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
-    .app-Play-btn {
-       display: flex;
-       width: 50px;
-       height: 50px;
-       margin-right: 100px;
-    }
-    .Google-Play-btn {
-        display: flex;
-       width: 50px;
-       height: 50px;
-       margin-right: 100px;
-       margin-top: 20px;
-    }.GTD-btn{
+        width: 55px;
+        height: 55px;
+        margin-right: 110px;
+    }.GTD-btn {
         background-color: #514BC3;
-        width: 23%;
+        width: 20%;
         height: 50px;
         border-radius: 30px;
         color: white;
         font-size: 15px;
         border: none;
+    }.buttons-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+        gap: 20px;
+    }.Footer{
+        margin: 20px;
+        font-family:'Poppins';
+    }.Text-Container{
+        margin-top: 100px;
+    }.Text-Container span {
+        font-size: 50px;
+    }.Text-Container p {
+        font-size: 40px;
+        font-weight: lighter;
+    }.Text-Container small {
+        font-size:larger;
+        font-weight:lighter;
+    }.GTD-btn:hover {
+        background-color:royalblue;
     }
-
 }
