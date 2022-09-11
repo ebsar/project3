@@ -10,14 +10,11 @@
   }.Icon-Section{ 
     display: flex;
     gap: 10%;
-  }.Icon-Section h1 {
-    font-family: 'Poppins', sans-serif;
-    font-size: x-large;
   }.Icon-Section{
     display: flex;
     align-items: center;
   }.Button-Section{
-    
+    font-family: 'Poppins';
     display: flex;
     justify-content: end;
     align-items: center;

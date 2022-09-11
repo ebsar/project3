@@ -47,12 +47,12 @@ function App() {
     list-style: none;
   }
 `;
-
+<Link to='/'>Findcarpool </Link>
   return (
       <div style={{ width: '99%' }} className="Home-Section" data-aos="zoom-in" >
         <div className="Icon-Section">
           <img src={Ajeper} />
-          <h1>AjePer</h1>
+          <Link to='/' style={{fontFamily:'poppins', textDecoration:'none', fontSize:'x-large', color:'black', fontWeight:'bolder'}} >AjePer</Link>
         </div>
         <div  className="navigation-bar">
         <NavUnlisted  >
@@ -60,18 +60,22 @@ function App() {
           <Link to="/resources" ><li>Resources</li></Link>
           <Link to="/aboutus" ><li>About Us</li></Link>
           <Link to="/blog" ><li>Blog</li></Link>
-          <a >
-            <li style={{display: 'flex', alignItems:'center', gap:'10px'}}>
-              Find Carpool<BsChevronDown className={FindCar ? "rotated" : "rotate"} onClick={onHold}/>
-              {
-            FindCar && 
-            <div style={{ display:'flex', flexDirection:'column', position:'absolute', top:'50px', width:'190px', gap:'10px'}}>              
-            <Link to="/"><li>Rent a Car</li></Link>
-            <Link to="/"><li>Sell Car</li></Link>
+          <Link to='/login' style={{fontFamily:'poppins', fontSize:'large', color:'black'}} >Findcarpool
+          {
+            FindCar && <div style={{
+              position:'absolute',
+              display: 'flex',
+              flexDirection:'column',
+              fontFamily:'poppins',
+              fontSize:'Large',
+            }}>
+              <Link to="/about" style={{color:'black'}} > Findcarpool 1 </Link>
+              <Link to="/" style={{color:'black'}}> Findcarpool 2 </Link>
             </div>
           }
-            </li>
-             </a>
+          
+          </Link>
+          <a style={{marginLeft:'10px', position:'static',justifyContent:'center', alignItems:'center', display:'flex'}}> <BsChevronDown className={FindCar ? "rotated" : "rotate"} onClick={onHold}/></a>
         </NavUnlisted>
         </div>
         <div className="Button-Section">
