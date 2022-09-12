@@ -3,8 +3,7 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Aboutus from "./Pages/Aboutus";
 import Home from "./Pages/Home";
 import { BsChevronDown } from 'react-icons/bs';
-import Resources from "./Pages/Resources";
-import Blog from "./Pages/Blog";
+import Whoweare from "./Pages/Whoweare";
 import Findcarpool from "./Pages/Findcarpool";
 import Login from "./Pages/Login";
 import Signup from "./Pages/Signup";
@@ -21,10 +20,6 @@ function App() {
     <BrowserRouter>
     <Routes>
     <Route path="/" element={<Home />} />
-        <Route path='/resources' element={<Resources/>} />
-        <Route path='/aboutus' element={<Aboutus />} />
-        <Route path='/blog' element={<Blog />} />
-        <Route path='/findcarpool' element={<Findcarpool />} />
         <Route path='/login' element={<Login />} />
         <Route path='/signup' element={<Signup />} />
       </Routes>

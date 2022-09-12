@@ -1,81 +1,57 @@
-@media (min-width: 1110px) {
 
-    .first-container {
+    @media (min-width: 1110px) {
+    .Footer-first-container {
+        height: 99vh;
+        background-image: url('./AjeperLogo/Purple\ background.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right;
         background-color: #f2f7ff;
-        display: flex;
-        height: 100%;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-image: url('../Photos/background.png');
-        background-repeat: no-repeat;
-        background-position: right;
-        background-size: contain;
-
-    }
-
-    .Footer {
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        width: 45%;
-    }
-
-    .images {
-        position: fixed;
-        width: 100% !important;
-        display: flex;
-        top: 0;
-        height: 100%;
-        overflow: hidden;
-        background-repeat: no-repeat;
-        background-position: right;
-        background-size: contain;
-    }
-
-    .Text-Container span {
-        width: 100%;
-        font-family: 'Poppins', sans-serif;
-        font-size: 50px;
+    }.Footer{
+        width: 35%;
+        font-family: 'poppins';
+        margin-left: 5%;
+    }.Footer-Text-Container span {
         font-weight: bolder;
-
-    }
-
-    .Text-Container p {
-        font-family: 'Poppins', sans-serif;
+        margin-top: 10%;
+        font-size: 60px;
+    }.Footer-Text-Container p {
+        font-weight:500;
         font-size: 40px;
-        font-weight: normal;
-        margin-top: 10px;
-
-    }
-
-    .Text-Container small {
-        font-family: 'Poppins', sans-serif;
-        font-size: large;
+    }.Footer-Text-Container small {
         font-weight: lighter;
-
-    }
-
-    .Text-Container {
-        margin-top: 20%;
-
-        margin-left: 12%;
-
-    }
-
-    .buttons-section {
+        font-size: 20px;
+    }.Footer-buttons-section{
         display: flex;
-        align-items: center;
-        gap: 5rem;
-        margin-left: 12%;
         margin-top: 20%;
-
-    }
-
-    a.btn-google {
+        gap: 10%;
+    }.a.btn-google {
         color: black
+    }.Footer-Text-Container{
+        padding-top: 30%;
+        
+    }.Footer-Prizren-Prishtin{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 8%;
+        width: 80%;
+        font-family: 'poppins';
+        background-repeat: no-repeat;
+        background-position: center;
+    }.Footer-Line{
+        width: 90%;
+        height: 20px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url('./AjeperLogo/Group5.png');
+        background-position: center;
+        margin-left: 10px;
+        display: flex;
+        justify-content:space-between;
+    }.Footer-Prizren-Prishtin small {
+        font-weight: lighter;
+        color: gray;
     }
 
     .btn {
@@ -131,21 +107,7 @@
         left: 40px;
         font-size: 10px;
         font-weight: 400;
-    }a.btn-google {
-        color: black
-    }
-
-
-
-
-
-
-
-
-
-
-
-    .btn-Apple {
+    }.btn-Apple {
         color: black;
         background-color: white;
         padding: 15px 16px 5px 40px;
@@ -176,12 +138,39 @@
         left: 40px;
         font-size: 10px;
         font-weight: 400;
+    }.Footer-White-Background{
+        position: absolute;
+        bottom: 70%;
+        left:80%;
+        width: 300px;
+        height: 100px;
+        background-color: white;
+        border-radius: 20px;
+    }.Footer-Text-Img{
+        margin-left: 20px;
+        display: flex;
+        align-items: center;
+        width: 50%;
+        justify-content: space-between;
+    }.Footer-Text-Img img {
+        width: 35px;
+        height: 35px;
+    }.images{
+        position: absolute;
+        background-image: url('./AjeperLogo/Group177.png');
+        left: 43%;
+        bottom: 15%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 650px;
+        height: 650px;
     }
+
     
 }
 
 @media (max-width: 1110px) {
-    .first-container {
+    .Footer-first-container {
         position: absolute;
         display: flex;
         top: 0;
@@ -348,6 +337,5 @@
         background-size:cover;
         background-repeat: no-repeat;
         position: fixed;
-
     }
 }

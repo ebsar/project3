@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Aboutus from "./Pages/Aboutus";
 import Home from "./Pages/Home";
 import { BsChevronDown } from 'react-icons/bs';
-import Resources from "./Pages/Resources";
+import Resources from "./Pages/Whoweare";
 import Blog from "./Pages/Blog";
 import Findcarpool from "./Pages/Findcarpool";
 import Login from "./Pages/Login";
@@ -14,6 +14,29 @@ import styled from "styled-components";
 import Aos from "aos";
 import "aos/dist/aos.css";
 function App() {
+
+  const [colorChange, setColorchange] = useState(false);
+  const changeNavbarColor = () =>{
+     if(window.scrollY >= 80){
+       setColorchange(true);
+     }
+     else{
+       setColorchange(false);
+     }
+  };
+  window.addEventListener('scroll', changeNavbarColor);
+
+  const [colorChange1, setColorchange1] = useState(false);
+  const changeNavbarColor1 = () =>{
+     if(window.scrollY >= 80){
+       setColorchange1(true);
+     }
+     else{
+       setColorchange1(false);
+     }
+  };
+  window.addEventListener('scroll', changeNavbarColor1);
+
   useEffect(()=> {
     Aos.init({duration:2000})
   }, []);
@@ -49,7 +72,7 @@ function App() {
 `;
 <Link to='/'>Findcarpool </Link>
   return (
-      <div style={{ width: '99%' }} className="Home-Section" data-aos="zoom-in" >
+      <div style={{ width: '99%' }}className={colorChange ? 'navbar-colorChange' : 'navbar'} >
         <div className="Icon-Section">
           <img src={Ajeper} />
           <Link to='/' style={{fontFamily:'poppins', textDecoration:'none', fontSize:'x-large', color:'black', fontWeight:'bolder'}} >AjePer</Link>
@@ -79,7 +102,7 @@ function App() {
         </NavUnlisted>
         </div>
         <div className="Button-Section">
-          <Link to="/login" style={{ textDecoration: 'none', color: 'white' }} >Log in</Link>
+          <Link to="/login" style={{ textDecoration: 'none'}} className={colorChange1 ? 'Navbar-text3' : 'text3'}>Log in</Link>
           <Link to="/signup" style={{ textDecoration: 'none', width:'100px', height:'40px', background:'white',color:'black', display:'flex', alignItems:'center',justifyContent:'center', borderRadius:'20px'}} >Sign up</Link>
         </div>
         <div onClick={onPress} className="toggle-container1">
