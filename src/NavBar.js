@@ -4,7 +4,6 @@ import Aboutus from "./Pages/Aboutus";
 import Home from "./Pages/Home";
 import { BsChevronDown } from 'react-icons/bs';
 import Resources from "./Pages/Whoweare";
-import Blog from "./Pages/Blog";
 import Findcarpool from "./Pages/Findcarpool";
 import Login from "./Pages/Login";
 import Signup from "./Pages/Signup";

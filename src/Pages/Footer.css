@@ -164,6 +164,116 @@
         background-size: contain;
         width: 650px;
         height: 650px;
+    }.Footer-Image-Person{
+        background-image: url('./AjeperLogo/Group11.png');
+        display: inline-block;
+        left: 52%;
+        bottom: 10%;        
+        position:absolute;
+        width: 70px;
+        border-radius: 50%;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 70px;
+        animation: Rotate 3s;
+       
+    }.Footer-Image-Person2{
+        background-image: url('./AjeperLogo/Group10.png');       
+        position:absolute;
+        width: 90px;
+        border-radius: 50%;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 90px;
+        animation: Rotate 3s;
+       left: 40%;
+       bottom: 30%;
+    }.Footer-Image-Person3{
+        background-image: url('./AjeperLogo/Group9.png');       
+        position:absolute;
+        width: 110px;
+        border-radius: 50%;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 110px;
+        animation: Rotate 3s;
+       left: 42%;
+       bottom: 75%;
+    }.Footer-Image-Person4{
+        background-image: url('./AjeperLogo/Group8.png');       
+        position:absolute;
+        width: 100px;
+        border-radius: 50%;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 100px;
+        animation: Rotate 3s;
+       left:66%;
+       bottom: 85%;
+    }.Footer-Image-Person5{
+        background-image: url('./AjeperLogo/Group7.png');       
+        position:absolute;
+        width: 100px;
+        border-radius: 50%;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 100px;
+        left: 95%;
+        animation: Rotate 3s;
+    }.Footer-Image-Person5 img{
+        width: 60px;
+        height: 60px;
+        position:absolute;
+        margin-top: 20%;
+        margin-left: 20%;
+    }.Footer-Image-Person4 img{
+        width: 80px;
+        height: 80px;
+        position:absolute;
+        margin-top: 10%;
+        margin-left: 10%;
+    }
+    .Footer-Image-Person2 img{
+        position:absolute;
+        margin-top: 18%;
+        margin-left: 18%;
+    }.Footer-Image-Person img{
+        position:absolute;
+        margin-top: 17.5%;
+        margin-left: 20%;
+    }.Footer-Image-Person3 img{
+        position:absolute;
+        margin-top: 17.5%;
+        margin-left: 20%;
+    }
+    @keyframes Rotate {
+        from {
+            transform: rotate(0deg);
+          }
+          to {
+            transform: rotate(359deg);
+        }
+        
+    }.Footer-Maps-Container{
+        display: flex;
+        width: 300px;
+        height: 150px;
+        background-color: white;
+        position: absolute;
+        background-color: white;
+        border-bottom-left-radius: 20px;
+        border-top-left-radius: 20px;
+        left:84.211%;
+
+        top: 50%;
+    }.Footer-Maps-Container p{
+        font-family: 'poppins';
+        margin-left: 40px;
     }
 
     
