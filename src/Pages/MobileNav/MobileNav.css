@@ -1,5 +1,13 @@
-.Mobile-Nav-Container{
-    margin: 15px;
+.mobile-navbar-colorChange{
+    position:fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    z-index: 100;
+}.mobile-navbar{
     position:fixed;
     left: 0;
     top: 0;
@@ -7,7 +15,9 @@
     display: flex;
     align-items: center;
     z-index: 100;
-}.toogle-container{
+}
+
+.toogle-container{
 
     position:sticky;
     left: 95%;
@@ -16,7 +26,7 @@
     font-size: x-large;
     font-weight: bolder;
 }@media (min-width: 1110px ){
-    .Mobile-Nav-Container{
+    .mobile-navbar-colorChange, .mobile-navbar{
       display: none;
     }
   }

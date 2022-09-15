@@ -1,0 +1,57 @@
+@import "react-datepicker/dist/react-datepicker.css";
+
+
+.Leaving-React-Select {
+    margin-top: 100px;
+    height: 170px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.Leaving-Text-Container {
+    padding-left: 5%;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-height: 600px;
+    flex-wrap: wrap;
+}
+
+.Leaving-Text-1 {
+    display: flex;
+    gap: 40px;
+    width: 700px;
+}
+
+.Leaving-Text-Field {
+    display: flex;
+    flex-direction: column;
+}
+
+.Leaving-Backgorund-img {
+    width: 1110px;
+    height: 850px;
+    background-image: url('../Photos/Group38937.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+}
+
+.Leaving-Values {
+    margin-top: 100px;
+    display: flex;
+    row-gap: 20px;
+    flex-direction: column;
+    width: 300px;
+    padding-left: 5%;
+}
+
+.Leaving-Text-as-display-flex {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    row-gap: 50px;
+}

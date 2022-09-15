@@ -3,6 +3,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-top: 120px;
     width: 100%;
 }.Whoweare-Container img {
     width: 350px;
@@ -20,12 +21,24 @@
 }.Text-Container2 span{
     font-weight:lighter;
     display: flex;
-    width: 70%;
+    width: 100%;
 }.button-section-2{
     display: flex;
     align-items: center;
-    width: 50%;
+    width: 300px;
     margin-top: 40px;
+}.Whoweare-Button-1 {
+    background-color: #514BC3;
+    width: 130px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    border-radius: 30px;
+    color: white;
+    font-size: 15px;
+    border: none;
 }.Video{
     margin-left: 30px;
     margin-right: 30px;
@@ -34,4 +47,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}@media (max-width: 700px) {
+    .Whoweare-Container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }.button-section-2{
+        display: flex;
+
+    }
 }
+

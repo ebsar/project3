@@ -13,11 +13,13 @@ import styled from "styled-components";
 import NavBar from "./NavBar";
 import Footer from "./Pages/Footer";
 import MobileNav from "./Pages/MobileNav/MobileNav";
+import ScrollToTop from "./ScrollToTop";
 
 function App() {
 
   return (
     <BrowserRouter>
+    <ScrollToTop/>
     <Routes>
     <Route path="/" element={<Home />} />
         <Route path='/login' element={<Login />} />

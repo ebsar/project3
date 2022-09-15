@@ -6,12 +6,23 @@ import SideDraw from './SideDraw';
 import BackDrop from './BackDrop';
 
 function MobileNav (){
+    const [colorChange2, setColorchange2] = useState(false);
+  const changeNavbarColor2 = () =>{
+     if(window.scrollY >= 80){
+       setColorchange2(true);
+     }
+     else{
+       setColorchange2(false);
+     }
+  };
+  window.addEventListener('scroll', changeNavbarColor2);
+
     const [sideDraw, setsideDraw] = useState(false);
   const onButton = () => {
     setsideDraw((prev) => !prev);
   }
     return(
-        <nav className="Mobile-Nav-Container" data-aos="zoom-in">
+        <nav className={colorChange2 ? 'mobile-navbar-colorChange' : 'mobile-navbar'}data-aos="zoom-in">
             <div className="Img-Container"/>
             <img src={Ajeper} />
             <div className="Title-Container">
