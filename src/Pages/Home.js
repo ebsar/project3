@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import '../index.css';
 import NavBar from "../NavBar";
+import Features from "./Features";
 import Footer from "./Footer";
 import Leaving from "./Leaving";
 import MobileNav from "./MobileNav/MobileNav";
@@ -14,6 +15,7 @@ function App() {
       <Footer/>
       <Leaving/>
       <Whoweare/>
+      <Features/>
     </div>
   )
 }

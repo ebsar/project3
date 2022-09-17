@@ -36,7 +36,7 @@ function Footer() {
                     <img  src={Oval} />
                     <p>Amir Mustafa</p>
                 </div>
-                <div className='Footer-Line' data-aos='fade-left'>
+                <div className='Footer-Line' data-aos='zoom-in'>
 
                 </div>
                 <div className='Footer-Prizren-Prishtin'  >

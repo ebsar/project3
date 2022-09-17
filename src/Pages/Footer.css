@@ -7,6 +7,8 @@
         background-size: contain;
         background-position: right;
         background-color: #f2f7ff;
+        overflow: hidden;
+        position: relative;
     }.Footer{
         width: 35%;
         font-family: 'poppins';

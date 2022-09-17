@@ -1,6 +1,7 @@
 
 .navbar{
-    position: fixed;
+    position: absolute;
+    width: 100%;
     display: flex;
     z-index: 1;
     align-items: center;
@@ -40,6 +41,9 @@
     color: white;
   }.Navbar-text3{
     color: black;
+  }.navbar-colorChange{
+    position: fixed;
+    top:0;
   }
   @media (max-width: 1110px ){
     .navbar, .navbar-colorChange{

@@ -1,4 +1,5 @@
 .mobile-navbar-colorChange{
+    padding: 10px;
     position:fixed;
     left: 0;
     top: 0;
@@ -8,19 +9,19 @@
     background-color: white;
     z-index: 100;
 }.mobile-navbar{
+    padding: 10px;
     position:fixed;
     left: 0;
     top: 0;
     width: 100%;
     display: flex;
     align-items: center;
-    z-index: 100;
 }
 
 .toogle-container{
-
-    position:sticky;
-    left: 95%;
+    position: absolute;
+    left: 80%;
+    display: flex;
 }.Title-Container{
     margin-left: 15px;
     font-size: x-large;

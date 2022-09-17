@@ -71,7 +71,7 @@ function App() {
 `;
 <Link to='/'>Findcarpool </Link>
   return (
-      <div style={{ width: '99%' }}className={colorChange ? 'navbar-colorChange' : 'navbar'} >
+      <div className={colorChange ? 'navbar-colorChange' : 'navbar'} >
         <div className="Icon-Section">
           <img src={Ajeper} />
           <Link to='/' style={{fontFamily:'poppins', textDecoration:'none', fontSize:'x-large', color:'black', fontWeight:'bolder'}} >AjePer</Link>
