@@ -34,7 +34,7 @@ function ReactSelect () {
       };
       
     return (
-        <div className="React-Select-First-Container" >
+        <div className="React-Select-First-Container" data-aos='zoom-in' >
             <div className="React-Select-Second-Contaienr">
                 <div className="First-React-Select">
                    <IoLocationSharp color="grey" />

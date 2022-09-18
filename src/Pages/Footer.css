@@ -451,4 +451,11 @@
     }.Footer-Maps-Container{
         display: none;
     }
+}.Footer-Maps-Container{
+    display: flex;
+    flex-direction: column;
+}.Footer-Maps-Container img {
+    margin-left: 20px;
+    width: 450px;
+    height: 80px;
 }

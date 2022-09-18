@@ -71,7 +71,7 @@ function App() {
 `;
 <Link to='/'>Findcarpool </Link>
   return (
-      <div className={colorChange ? 'navbar-colorChange' : 'navbar'} >
+      <div className={colorChange ? 'navbar-colorChange' : 'navbar'} data-aos='zoom-in'>
         <div className="Icon-Section">
           <img src={Ajeper} />
           <Link to='/' style={{fontFamily:'poppins', textDecoration:'none', fontSize:'x-large', color:'black', fontWeight:'bolder'}} >AjePer</Link>
@@ -82,7 +82,7 @@ function App() {
           <Link to="/resources" ><li>Resources</li></Link>
           <Link to="/aboutus" ><li>About Us</li></Link>
           <Link to="/blog" ><li>Blog</li></Link>
-          <Link to='/login' style={{fontFamily:'poppins', fontSize:'large', color:'black'}} >Findcarpool
+          <Link to='/login'  style={{fontFamily:'poppins', textDecoration:'none', fontSize:'1.2rem ', color:'black'}} >Findcarpool
           {
             FindCar && <div style={{
               position:'absolute',

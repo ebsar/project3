@@ -36,7 +36,7 @@ function Features (){
     return(
         <div className="Features-Features">
         <div className="Features-first-Container">
-            <div className="Features-Title">
+            <div className="Features-Title" data-aos='fade-right'>
                 <small>Features</small>
                 <span>Why Choose AjePer</span>
                 <p>At AjePer the prime focus has always been easy to use and simple user experience. We always try our best to balance between features and</p>
@@ -44,7 +44,7 @@ function Features (){
             <div className="Features-Icon-Text">
                 <div className="Features-Makeing-Test1">
                     {someFeatures.map((somefeatures) => 
-                    <div className="Features-Icon-Text-Text">
+                    <div className="Features-Icon-Text-Text" data-aos='fade-right'>
                     <div>{somefeatures.icon}</div>
                     <div>{somefeatures.text}</div>
                     </div>
@@ -52,7 +52,7 @@ function Features (){
 
                     }
                     </div>
-                    <div className="Features-Makeing-Test1">
+                    <div className="Features-Makeing-Test1" data-aos='fade-left'>
                     {someFeatures2.map((somefeatures2) => 
                     <div className="Features-Icon-Text-Text-1">
                     <div >{somefeatures2.icon}</div>
@@ -68,11 +68,11 @@ function Features (){
                     </div>
         </div>
         <div className="Features-Circle-Text">
-            <div className="Features-Circle-1"></div>
-            <div className="Features-Circle-2"></div>
-            <div className="Features-Circle-3"></div>
-            <div className="Features-Circle-4"></div>
-            <div className="Features-Text-1">
+            <div className="Features-Circle-1"data-aos='zoom-in' ></div>
+            <div className="Features-Circle-2"data-aos='zoom-in'></div>
+            <div className="Features-Circle-3"data-aos='zoom-in'></div>
+            <div className="Features-Circle-4"data-aos='zoom-in'></div>
+            <div className="Features-Text-1" data-aos='zoom-in'>
                 <img src={Ajeper} />
                 <span>A je per</span>
             </div>

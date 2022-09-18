@@ -57,4 +57,6 @@
     .buttons-section{
       display: none;
     }
+  }.Icon-Section a {
+    font-family: 'Poppins';
   }

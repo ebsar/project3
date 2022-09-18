@@ -23,7 +23,7 @@ const valuesData = [
   {
     title:"Scroll, click, tap and go!",
     text:"Booking a ride has never been easier! Thanks to our simple app powered by great technology, you can book a ride close to you in just minutes.",
-    icon:<VscWorkspaceTrusted/>,
+    icon:<ImMobile2/>,
     color:"#FFB300",
     bgColor:"#FDD677"
   },
@@ -31,7 +31,7 @@ const valuesData = [
   {
     title:"Save money",
     text:"No matter where you’re going, by bus or carpool, find the perfect ride from our wide range of destinations and routes at low prices.",
-    icon:<VscWorkspaceTrusted/>,
+    icon:<AiFillTags/>,
     color:"#0D13D7",
     bgColor:"#C1C2F4"
   }
@@ -71,12 +71,8 @@ function Leaving() {
   };
   return (
     <div className="Leaving">
-      <div className='Leaving-React-Select'>
-        
-      </div>
-
       <div className='Leaving-Text-Container'>
-      <div className='left-side' >
+      <div className='left-side'data-aos='fade-right' >
 
         <small style={{ fontFamily: 'poppins', fontSize: 'small' }} >WHY SHOULD I CARPOOL?</small>
           <span style={{ fontFamily: 'poppins', fontSize: 'xx-Large', fontWeight: 'bolder' }} > AjePer Values </span>
@@ -98,7 +94,7 @@ function Leaving() {
             )
           })}
       </div>
-      <div className='right-side' >
+      <div className='right-side' data-aos='zoom-in' >
         <img className='violet-bg' src={Background12}/>
         <img className='car-img' src={Car} />
       </div>
