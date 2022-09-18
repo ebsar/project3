@@ -5,6 +5,7 @@ import {MdVerified, MdOutlineDesignServices} from "react-icons/md";
 import {BsChat} from 'react-icons/bs';
 import './Features.scss';
 import { Link } from 'react-router-dom';
+import Ajeper from '../Photos/Ajeper.png';
 
 function Features (){
     const someFeatures=[
@@ -33,6 +34,7 @@ function Features (){
         }
     ];
     return(
+        <div className="Features-Features">
         <div className="Features-first-Container">
             <div className="Features-Title">
                 <small>Features</small>
@@ -64,6 +66,17 @@ function Features (){
             <div className="Features-Learn-More">
                     <Link to="/" > Learn More</Link>
                     </div>
+        </div>
+        <div className="Features-Circle-Text">
+            <div className="Features-Circle-1"></div>
+            <div className="Features-Circle-2"></div>
+            <div className="Features-Circle-3"></div>
+            <div className="Features-Circle-4"></div>
+            <div className="Features-Text-1">
+                <img src={Ajeper} />
+                <span>A je per</span>
+            </div>
+        </div>
         </div>
     );
 }

@@ -21,19 +21,19 @@ const valuesData = [
   },
 
   {
-    title:"Trust who you travel with",
-    text:"We take the time to get to know each of our members and bus partners. We check reviews, profiles and IDs, so you know who you’re travelling with and can book your ride at ease on our secure platform.",
+    title:"Scroll, click, tap and go!",
+    text:"Booking a ride has never been easier! Thanks to our simple app powered by great technology, you can book a ride close to you in just minutes.",
     icon:<VscWorkspaceTrusted/>,
-    color:"#D60665",
-    bgColor:"#F4BFD7"
+    color:"#FFB300",
+    bgColor:"#FDD677"
   },
 
   {
-    title:"Trust who you travel with",
-    text:"We take the time to get to know each of our members and bus partners. We check reviews, profiles and IDs, so you know who you’re travelling with and can book your ride at ease on our secure platform.",
+    title:"Save money",
+    text:"No matter where you’re going, by bus or carpool, find the perfect ride from our wide range of destinations and routes at low prices.",
     icon:<VscWorkspaceTrusted/>,
-    color:"#D60665",
-    bgColor:"#F4BFD7"
+    color:"#0D13D7",
+    bgColor:"#C1C2F4"
   }
 ]
 
